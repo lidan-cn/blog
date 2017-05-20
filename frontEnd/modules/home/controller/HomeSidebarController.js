@@ -1,8 +1,8 @@
 define([], function () {
-    var ctrl = function ($scope) {
+    var ctrl = ['$scope', function ($scope) {
         console.log('home.sidebar.ctrl');
-    };
-    ctrl.$inject = ['$scope'];
-    ctrl.registerName = 'home.sidebar.ctrl';
+    }];
+    ctrl.name = 'home.sidebar.ctrl';
+    ctrl.registerType = 'controller';
     return ctrl;
 });

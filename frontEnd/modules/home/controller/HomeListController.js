@@ -1,11 +1,11 @@
 define([], function () {
-    var ctrl = function ($scope) {
+    var ctrl = ['$scope', function ($scope) {
         console.log('home.list.ctrl');
         $('.ui.sticky.menu').sticky({
-            context:"#list"
+            context: "#list"
         });
-    };
-    ctrl.$inject = ['$scope'];
-    ctrl.registerName = 'home.list.ctrl';
+    }];
+    ctrl.name = 'home.list.ctrl';
+    ctrl.registerType = 'controller';
     return ctrl;
 });
